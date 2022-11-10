@@ -1,0 +1,33 @@
+#join1{
+    padding-left: 200px;
+}
+#subhead{
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  text-align: left;
+  color: #535967;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.banner-left .banner-content p {
+    margin-bottom: 35px;
+    color: #fff;
+    opacity: .8;
+    font-size: 20px;
+    line-height: 38px;
+    font-family: "Muli", sans-serif;
+}
+.fa-list-ul {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+} 

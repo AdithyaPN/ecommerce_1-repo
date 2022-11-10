@@ -22,4 +22,5 @@ urlpatterns = [
     path('seller/', include('seller.urls')),
     path('', include('common.urls')),
     path('ecom_admin/', include('ecom_admin.urls')),
+    path('baabtra/', include('baabtra.urls')),
 ]

@@ -1,12 +1,32 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>seller login here</h1>
+    <!-- <h1>seller login here</h1> -->
+    <!-- <span>welcom to seller login</span> -->
+    <!-- <div>
+        <span><p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nesciunt cupiditate nam magni, quia neque accusamus deserunt explicabo laboriosam deleniti, sunt doloribus excepturi, error voluptatum suscipit! Aliquam totam reprehenderit officia.</p></span>
+    </div> -->
+    <table align="center" cellspacing="3px" cellpadding="2px" class="table">
+        <tr>
+            <td class="head">LOGIN</td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="User name"></td>
+        </tr>
+        <tr>
+            <td><input type="password" placeholder="Password"></td>
+        </tr>
+        <tr>
+            <td><button>Login</button></td>
+        </tr>
+    </table>
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //mirrored right triangle
+        // var n = 5;
+        // var string = "";
+        // for (var i = 1; i <= n; i++) {
+        //     // printing spaces
+        //     for (var j = 0; j < n - i; j++) {
+        //         string += " ";
+        //     }
+        //     // printing star
+        //     for (var k = 0; k < i; k++) {
+        //         string += "*";
+        //     }
+        //     string += "\n";
+        // }
+        // console.log(string);
+
+        var n=5
+        var string=""
+        for(var i = 1; i<n; i++){
+            for(var j = n; j>0; j--){
+                if(j<=i){ //if it is false go to else and print space until 5.
+                    string +="*"
+                }
+                else{
+                    string+=" "
+                }
+            }
+            string += "\n"
+        }
+        console.log(string)
+    </script>
+</body>
+</html>

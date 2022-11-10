@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: olivedrab;
+           /* display: none; /*2.to set initially hidden, it should be removed whwn fade out*/
+           /*position: absolute;/*set postion to move left*/
+           padding: 20px;
+           border: 3px black solid;
+        }
+        .div1{
+            background-color: grey;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <p id="p1">Welcome to jQuery</p>
+    <input type="text" value="jQUERY">
+    <script> //DOM structure create aayal maathre ith load aavandathullu, so we use $
+        $(document).ready( function(){//anonymuous function: a fuction with out name
+            var a = $("#p1").html() //# is used for id selector
+            $("#p1").html("hello jQuery") //to change the content on page
+            console.log(a)
+            var b = $("input").val()
+            console.log(b)
+            
+        })
+    </script> -->
+    <button type="button" id="b1">Click</button>
+    <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis natus facere nesciunt. Unde ipsum facere tempora. Veniam harum eligendi, delectus, quasi tempore ad ex cumque quia reprehenderit quod beatae.</div>
+    <div id="div2">Lorem <span id="span1"> dolor sit amet,</span> consectetur <span id="span2">dfkjh</span>adipisicing elit.</div>
+    <!-- <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul> -->
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <p>p4</p>
+    <script>
+        $(document).ready(function(){
+            // $("#b1").click(function(){
+            //     // $("div").hide()// 1.it displays none on the inspect elemets
+            //     // $("div").show()//3. to show
+            //     // $("div").toggle(5000)//4.to show and hide
+            //     // $("div").fadeIn()
+            //     // $("div").fadeOut(5000)
+            //     // $("div").fadeTo(1000,0.5)//brightness
+            //     // $("div").fadeToggle()//
+            //     // $("div").slideDown()//display: none on slide comment
+            //     // $("div").slideUp()//display :none uncomment
+            // })
+            $("div").click(function(){//increase height when clicks the div
+                // $("div").animate({
+                //     'height':'250px'
+                // })
+                // $(this).animate({//this animate works first
+                //     // 'height':'250px',
+                //     // 'width':'250px',
+                //     'left':'200px',//move 200px from left 
+                //     // 'top':'200px'//commented for chaining, ingane koduthal daigonally move aavum
+                // },3000).delay(3000)
+                // .animate({
+                //     'top':'200px'
+                // },3000).delay(3000)
+                // .animate({
+                //     'left':'0px'
+                // },3000).delay(3000)
+                // .animate({
+                //     'top':'0px'
+                // },3000)
+                // $(this).css('color','red')//when set one attribute
+                // $(this).css({
+                //     'color':'white',
+                //     'font-type': 'sans-serif',
+                //     'font-size':'20px'
+                // })
+                // $(this).addClass('div1')//elenets il oru class assign aayi varum
+                // $(this).remove()//click from dom
+                // $('ul').empty()
+                // console.log($(this).height())
+                // console.log($(this).width())
+                // console.log($(this).innerHeight())
+                // console.log($(this).innerWidth())
+                // console.log($(this).outerHeight())
+                // console.log($(this).outerWidth())
+                // console.log($('#span1').parent())
+                // console.log($('#div1').children())
+                // console.log($('#span1').siblings())
+                // console.log($('span').first())
+                // console.log($('div').last())
+                // console.log($('span').eq(0))
+                $('p').eq(2).css({
+                    'color':'red',
+                    'font-size':'15px'
+                })
+            })
+        })
+    </script>
+</body>
+</html>

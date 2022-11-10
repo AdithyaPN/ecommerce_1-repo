@@ -1,0 +1,11 @@
+/* #rule1{
+    color: black; /* according to priority inline style works
+    font-size: medium;
+}*/
+
+.rule2{
+    color: gray; /*second priory goes to class */
+}
+div{
+    color: brown !important;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        .error{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text" id="inp1"><br><br>
+        <b id="label1"></b><br>
+        <label for="">Email</label>
+        <input type="email" id="inp2"><br><br>
+        <b id="label2"></b><br>
+        <label for="">Password</label>
+        <input type="Password" id="inp3"><br><br>
+        <b id="label3"></b><br>
+        <label for="">Confirm Password</label>
+        <input type="password" id="inp4"><br><br>
+        <b id="label4"></b><br>
+        <button type="submit" id="button1" onclick="return formValidation()">Submit</button>
+    </form>
+    <script>
+        function formValidation(){
+            u_name = document.getElementById('inp1').value
+            e_mail = document.getElementById('inp2').value
+            password = document.getElementById('inp3').value
+            c_password = document.getElementById('inp4').value
+            mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            status = 0
+
+            if(u_name == ""){
+                document.getElementById('label1').innerHTML = 'User name can not be null'
+                document.getElementById('label1').style.color = 'red'
+                status = 1
+            }
+            else{
+                document.getElementById('label1').innerHTML = ""
+            }
+            if(e_mail.match(mailformat)){
+                document.getElementById('label2').innerHTML = ""
+            }
+            else{
+                document.getElementById('label2').innerHTML = 'Incorrect email format'
+                document.getElementById('label2').style.color = 'red'
+                // document.getElementById('inp2').focus()//to focus the input area
+                // document.getElementById('inp2').style.color = 'red'//red when format changes
+                document.getElementById('inp2').setAttribute('class',"error")
+                status = 1
+            }
+            if(password.length<6){
+                document.getElementById('label3').innerHTML = 'Password is too short'
+                document.getElementById('label3').style.color = 'red'
+                status = 1
+            }
+            else{
+                document.getElementById('label3').innerHTML = ""
+            }
+            if(c_password != password){
+                console.log(c_password)
+                console.log(password)
+                document.getElementById('label4').innerHTML = 'Password must be same'
+                document.getElementById('label4').style.color = 'red'
+                status = 1
+            }
+            else{
+                document.getElementById('label4').innerHTML = ""
+            }
+            if(status == 1){
+                return false//set return in onclick function to not submit the form if false
+            }
+        }
+    </script>
+</body>
+</html>

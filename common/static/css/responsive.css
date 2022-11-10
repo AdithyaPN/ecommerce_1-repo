@@ -1,0 +1,21 @@
+#box1{
+    border: 1px black solid;
+    margin: 20px;
+    height: 100px;
+    width: 50%;
+    background-color: lightgrey;
+}
+#box2{
+    border: 1px black solid;
+    margin: 20px;
+    height: 100px;
+    width: 50%;
+    background-color: lightgrey;
+}
+#box3{
+    border: 1px black solid;
+    margin: 20px;
+    height: 100px;
+    width: 50%;
+    background-color: lightgrey;
+}

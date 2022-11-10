@@ -1,0 +1,47 @@
+/*cssboxmodel.html*/
+img[alt="img1"]{
+    height: 500px;
+    width: 500px;
+}
+a[href="facebook.com"]{
+    color: gray;
+    font-size: medium;
+}
+/* a[href="youtube.com"]{
+    color: rgb(137, 174, 43);
+    font-size: medium;
+} */
+span{
+    color: black;
+    font-size: large;
+}
+div span{
+    color: inherit;
+    background-color: inherit;
+}
+p{
+    /* border-top-width: 1px;
+    border-top-style: dashed;
+    border-top-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: groove;
+    border-bottom-color: yellowgreen;
+    border-right-width: 1px;
+    border-right-style: dotted;
+    border-right-color: blueviolet;
+    border-left-width: 1px;
+    border-left-style: double;
+    border-left-color: blue; */
+    height: 100px;
+    width: 50%;
+    /* border-style: double solid black dotted;
+    border-color: black blue violet royalblue;
+    border-width: 1px 3px 2px 1px; */
+    border: 3px solid green;/* it works colock wise direction*/
+    /* padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px; */
+    padding: 25px 20px 25px 20px;/* it works colock wise direction*/
+    margin: 1px 2px 3px 4px;
+}

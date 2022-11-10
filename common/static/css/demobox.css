@@ -1,0 +1,40 @@
+.parent{
+    border-style: double solid black;
+    padding: 25px 25px 25px 25px;
+    margin: auto;/* to locate at center*/
+    /* height: 270px; */
+    width: 200px;
+    background-color: grey;
+    position: relative;
+}
+.box1{
+    border-style: double solid black;
+    padding: 20px 20px 20px 20px;
+    margin: auto;/* to locate at center*/
+    height: 50px;
+    width:100px;
+    background-color: white;
+}
+.box2{
+    border-style: double solid black;
+    padding: 20px 20px 20px 20px;
+    margin: auto;/* to locate at center*/
+    height: 50px;
+    width:100px;
+    background-color: crimson;
+    /*position: relative;*//*to move the box */
+    /*left: 100px;/* to move 100px right from already existing space*/
+    /* top: 50px; */
+    position: absolute;/*check the parent has any position fixed, if no it moves based on the top left corner of the body as its parent */
+    top: 20px;
+    left: 50px;
+
+}
+.box3{
+    border-style: double solid black;
+    padding: 20px 20px 20px 20px;
+    margin: auto;/* to locate at center*/
+    height: 50px;
+    width:100px;
+    background-color: rgb(43, 39, 40);
+}
